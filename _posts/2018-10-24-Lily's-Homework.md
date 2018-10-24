@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HackerRank 문제 풀이 : Lily's Homework
+title: HackerRank 문제 풀이 - Lily's Homework
 ---
 
 [Lily's Homework](https://www.hackerrank.com/challenges/lilys-homework/problem)

@@ -41,9 +41,8 @@
         <span class="badge">{{ category | last | size }}</span>
       </a>
       {% endfor %}
-    </nav>    
+    </nav>
   </div>
-
   <div>
     <div class="sidebar-nav-item">Tags</div>
     <div class="tags-cloud">
@@ -58,13 +57,13 @@
         {% assign min = tag[1].size %}
         {% endif %}
         {% endfor %}
-  
+
         {% if max == min %}
         {% assign diff = 1 %}
         {% else %}
         {% assign diff = max | minus: min %}
         {% endif %}
-  
+
         {% for tag in site.tags %}
         {% assign temp = tag[1].size | minus: min | times: 36 | divided_by: diff %}
         {% assign base = temp | divided_by: 4 %}
@@ -77,11 +76,17 @@
         {% assign size = base | plus: 10 %}
         {% endif %}
         {% if remain == 0 or remain == 1 %}
-        {% assign color = 9 | minus: base %}
+        {% assign color = 5 | plus: base %}
         {% else %}
-        {% assign color = 8 | minus: base %}
+        {% assign color = 6 | plus: base %}
         {% endif %}
-        <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag[0] }}" style="font-size: {{ size }}pt; color: #{{ 9 | minus: color }}{{ 9 | minus: color }}{{ 9 | minus: color }};">{{ tag[0] }}</a>
+
+        {% assign arr = "a, b, c, d, e, f" | split: ", " %}
+        {% if color > 9 %}
+        {% assign index = color | minus: 10 %}
+        {% assign color = arr[index] %}
+        {% endif %}
+        <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag[0] }}" style="font-size: {{ size }}pt; color: #{{ color }}{{ color }}{{ color }};">{{ tag[0] }}</a>
         {% endfor %}
       </div>
     </div>
@@ -98,5 +103,9 @@
   
 </div>
 
-
+<script>
+  window.addEventListener('hashchange', function(){
+    location.reload();
+  });
+</script>
 

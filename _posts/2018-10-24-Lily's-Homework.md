@@ -1,6 +1,7 @@
 ---
 layout: post
-title: HackerRank Lily's Homework
+title: Lily's Homework
+categories : HackerRank
 ---
 
 [Lily's Homework](https://www.hackerrank.com/challenges/lilys-homework/problem)

@@ -5,9 +5,9 @@ permalink:           pretty
 # relative_permalinks: true
 
 # Setup
-title:               파워코딩
-tagline:             'Power Coding'
-description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+title:               Power Coding
+tagline:             '파워 코딩'
+description:         '코딩은 언제나 힘차게'
 url:                 http://SuperPowerCoding.github.io
 baseurl:             ''
 paginate:            5

@@ -4,7 +4,7 @@ title: Lily's Homework
 categories: HackerRank
 tags:
 - HackerRank
-- sort
+- sorting
 ---
 
 [Lily's Homework](https://www.hackerrank.com/challenges/lilys-homework/problem)

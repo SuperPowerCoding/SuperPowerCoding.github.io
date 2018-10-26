@@ -2,7 +2,9 @@
 layout: post
 title: Lily's Homework
 categories: HackerRank
-tags: Sort
+tags:
+- HackerRank
+- sort
 ---
 
 [Lily's Homework](https://www.hackerrank.com/challenges/lilys-homework/problem)

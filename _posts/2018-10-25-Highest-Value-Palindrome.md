@@ -9,7 +9,7 @@ tags:
 
 [Highest Value Palindrome](https://www.hackerrank.com/challenges/richie-rich/problem)
 
-### Fact 정리
+### 풀이 핵심
 1. 앞자리가 클 수록 큰 숫자 이다.
 2. 입력 k 보다 변경해야 할 숫자가 더 크면 불가능하다. (-1 리턴)
 3. k가 변경 해야 할 숫자가 작으면, 숫자를 9로 바꾸면서 가장 큰 수를 만들어 낼 수 있다.
@@ -23,7 +23,6 @@ tags:
 6. 길이가 홀수 인 경우, 가운데 index를 추가 변경이 가능한 경우 9로 변경해 준다.
 
 ### Source Code
-
 {% highlight js %}
 import java.io.*;
 import java.math.*;

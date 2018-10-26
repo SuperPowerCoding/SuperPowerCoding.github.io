@@ -7,12 +7,13 @@ tags:
 - Implementation
 ---
 
+* * *
 [The Grid Search](https://www.hackerrank.com/challenges/bomber-man/problem)
-
+* * *
 ### 풀이 핵심
 1. 패턴을 인식하려면, 전체를 검색해서 맞는지 확인해야 한다.
-2. Java의 indexOf를 이용하면 쉽다. (해당 문자열의 시작 index 리턴)
-※ 알고리즘이 어렵지 않는 문제.
+2. Java의 indexOf를 이용하면 쉽다. (해당 문자열의 시작 index 리턴).
+- 알고리즘이 어렵지 않은 문제.
 
 ### Algorithm
 1. 비교 문자열의 첫번째 index를 구한다.
@@ -22,7 +23,7 @@ tags:
 5. 전체 검색 후에도 일치하는 패턴이 없다면, "NO" 리턴
 
 ### Source Code
-{% highlight js %}
+<pre><code>
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -113,4 +114,4 @@ public class Solution {
     }
 }
 
-{% endhighlight %}
+</code></pre>

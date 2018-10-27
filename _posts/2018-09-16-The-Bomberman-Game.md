@@ -8,7 +8,7 @@ tags:
 ---
 
 ## HackerRank link
-[The Bomberman Game](https://www.hackerrank.com/challenges/bomber-man/problem)
+    [The Bomberman Game](https://www.hackerrank.com/challenges/bomber-man/problem)
 
 ## 풀이 핵심
 1. 각 시점별로 특징이 있고, 반복이 된다.

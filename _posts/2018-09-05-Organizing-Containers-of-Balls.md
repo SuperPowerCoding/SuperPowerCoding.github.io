@@ -13,18 +13,18 @@ tags:
 
 ## **풀이 핵심** 
 각 타입의 총 수와 각 컨테이너가 갖고 있는 ball의 총 수가 일치 해야 함.
-'''
-ex)
-|            | type |   |
-|------------|------|---|
-|            | 0    | 1 | 
-| containers | 1    | 1 | 
-|            | 0    | 2 | 
-type 0번의 총 갯수가 1, container 0의 총 갯수는 2
-type 1번의 총 갯수가 3, container 1의 총 갯수는 2
+
+ex)  
+|            | type |   |  
+|------------|------|---|  
+|            | 0    | 1 |   
+| containers | 1    | 1 |   
+|            | 0    | 2 |   
+type 0번의 총 갯수가 1, container 0의 총 갯수는 2  
+type 1번의 총 갯수가 3, container 1의 총 갯수는 2  
 
 container의 0에 type 0을 다 swap해서 넣는다고 할때, type 0은 1개만 있는데 container의 0은 2개가 있으므로, 절대 type 0만 담을 수 없다.
-'''
+
 
 ## **Algorithm**
 1. type 별 총 갯수를 구한다. (각 행의 합)

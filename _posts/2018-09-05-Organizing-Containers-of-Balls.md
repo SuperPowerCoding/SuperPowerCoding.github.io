@@ -13,12 +13,13 @@ tags:
 
 ## **풀이 핵심** 
 각 타입의 총 수와 각 컨테이너가 갖고 있는 ball의 총 수가 일치 해야 함.
+
 ex)
-|  |  <center>types</center> ||
-|:--------|:--------:|--------:|
-|| <center>0 </center> |<center>1 </center> |
-|<center>containers</center> | <center>0 </center> |<center>2 </center> |
-|| <center>1 </center> | <center>1 </center> |
+|            | type |   |
+|------------|------|---|
+|            | 0    | 1 | 
+| containers | 1    | 1 | 
+|            | 0    | 2 | 
 
 type 0번의 총 갯수가 1, container 0의 총 갯수는 2
 type 1번의 총 갯수가 3, container 1의 총 갯수는 2

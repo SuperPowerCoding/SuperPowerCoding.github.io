@@ -7,15 +7,20 @@ tags:
 - Implementation
 ---
 
+### HackerRank link
+* * *
 [The Bomberman Game](https://www.hackerrank.com/challenges/bomber-man/problem)
 
 ### 풀이 핵심
+* * *
 1. 각 시점별로 특징이 있고, 반복이 된다.
 2. 폭탄이 꽉차는 시점이라면 계산할 필요가 없다.
 3. 구석진 곳에서는 처음과 다른 케이스가 나올 수 있으니 주의.
-→ 알고리즘이 어렵지 않는 문제.
+
+```*``` 알고리즘이 어렵지 않는 문제.
 
 ### Algorithm
+* * *
 1. 1초 후 라면 그대로 리턴. (구할 필요가 없음)
 2. String -> char 변환 (편집 용이성)
 3. n초후를 조정한다. (특정 시점 이후 반복)
@@ -23,6 +28,7 @@ tags:
 5. 마지막 상황 리턴
 
 ### Source Code
+* * *
 {% highlight js %}
 import java.io.*;
 import java.math.*;

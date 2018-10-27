@@ -14,14 +14,15 @@ tags:
 ## **풀이 핵심** 
 입력의 바로 다음 큰 문자열을 잘 만들어 내는 것이 핵심.
 
-ex) dabbcca
-1. 바뀌어야 되는 지점을 찾는다.                                      : dab**b**cca
-2. 바로 큰수와 교환                                                 : dab**b**c**c**a → da**c**c**b**a
-3. 바뀌어야 되는 지점은 거꾸로 크게 되어 있기 때문에, 거꾸로 돌려준다.  : dabc**cba** → dabc**abc**
-
 ## **Algorithm**
 1. String 입력을 Integer로 변환 한다. (편의성을 위해)
 2. 바로 다음 수를 구한다.
+
+### 다음수를 구하는 방법
+ex) dabbcca
+1. 바뀌어야 되는 지점을 찾는다. (내림차순 순의 처음지점): dab**b**cca
+2. 바로 큰수와 교환 : dab**b**c**c**a → da**c**c**b**a
+3. 바뀌어야 되는 지점이후 우측은 거꾸로 돌려준다.  : dabc**cba** → dabc**abc**
 
 ## **Source Code**
 {% highlight js %}

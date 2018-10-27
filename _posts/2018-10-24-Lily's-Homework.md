@@ -7,23 +7,26 @@ tags:
 - sorting
 ---
 
-## HackerRank link
+## **HackerRank link**
 [Lily's Homework](https://www.hackerrank.com/challenges/lilys-homework/problem)
 
-## 풀이 핵심
+
+## **풀이 핵심**
 1. 배열이 오름차순 또는 내림차순으로 정렬로 된 경우에 전후의 배열의 절대값의 합이 최소가 된다.
 2. 스왑해야 하는 수를 구하기 위해서는 직접 구하는 방법외에는 없다.
 3. 각 index가 스왑해야 하는지 판단하기 위해선 sorting을 해야 한다.
 4. 스왑해야 하는 위치를 알기 위해서는 HashMap이 필요하다. (key, value)
 
-## Algorithm
+
+## **Algorithm**
 1. input을 받으면서 HashMap을 업데이트 한다.
 2. 퍼포먼스가 좋은 내부 sort 함수를 이용하여 입력 sort한다.
 3. 오름 차순에 대하여 swap 횟수를 구한다.
 4. 내림 차순에 대하여 swap 횟수를 구한다.
 5. 과정 3, 4 중 최소값을 리턴한다.
 
-## Source Code
+
+## **Source Code**
 {% highlight js %}
 import java.io.*;
 import java.math.*;

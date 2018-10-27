@@ -8,21 +8,24 @@ tags:
 - radix sorting
 ---
 
-## HackerRank link
+## **HackerRank link**
 [Fraudulent Activity Notifications](https://www.hackerrank.com/challenges/fraudulent-activity-notifications/problem)
 
-## 풀이 핵심
+
+## **풀이 핵심**
 1. median 값을 sorting 없이 구할 수 있는 방법은 없다.
 2. median의 값을 구하기 위해 검색 해야 하는 날(d) 기준으로 매번 일반적인 sorting 한다면, 퍼포먼스에 큰 영향을 미친다.
 3. 0 <=expenditure[i] <= 200으로 radix sort을 이용한다면, median 값을 구하기 위해 매번 100회 정도의 검색만으로도 구할 수 있다.
 
-## Algorithm
+
+## **Algorithm**
 1. 처음 d날짜를 기준으로 radix를 업데이트 한다.
 2. radix를 이용하여 median을 구한다.
 3. 알림을 해야 하는지 판단한다.
 4. radix를 업데이트 한다.
 
-## Source Code
+
+## **Source Code**
 {% highlight js %}
 import java.io.*;
 import java.math.*;

@@ -9,7 +9,7 @@ tags:
 
 
 ## **HackerRank link**
-    [Ema's Supercomputer](https://www.hackerrank.com/challenges/two-pluses/problem)
+[Ema's Supercomputer](https://www.hackerrank.com/challenges/two-pluses/problem)
 
 
 ## **풀이 핵심**

@@ -8,20 +8,24 @@ tags:
 ---
 
 ## HackerRank link
-[Ema's Supercomputer](https://www.hackerrank.com/challenges/two-pluses/problem)
+===
+    [Ema's Supercomputer](https://www.hackerrank.com/challenges/two-pluses/problem)
 
 ## 풀이 핵심
+===
 1. 중복이 허용되지 않으므로, 직접 다 구해봐야한다.
 2. 결과값이 x 로 나오므로, 가장 큰 십자가 2개의 곱이 항상 최대값으로 보장되지 않는다.
 
-```*``` 알고리즘이 어렵지 않는 문제
-```*``` 유사 문제: Cross Word Puzzle.
+* 알고리즘이 어렵지 않는 문제
+* 유사 문제: Cross Word Puzzle.
 
 ## Algorithm
+===
 1. 십자가를 놓을 위치를 구한다.
 2. 최소 십자가 부터 최대 십자가까지 각각 1. 에서 구한 위치에 놓으면서, 결과를 구한다.
 
 ## Source Code
+===
 {% highlight js %}
 import java.io.*;
 import java.math.*;

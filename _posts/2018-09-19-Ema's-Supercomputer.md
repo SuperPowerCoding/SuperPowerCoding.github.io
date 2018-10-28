@@ -17,7 +17,7 @@ tags:
 2. 결과값이 x 로 나오므로, 가장 큰 십자가 2개의 곱이 항상 최대값으로 보장되지 않는다.
 
 * 알고리즘이 어렵지 않는 문제
-* 유사 문제: Cross Word Puzzle.
+* 유사 문제: [Cross Word Puzzle](https://superpowercoding.github.io/hackerrank/2018/08/13/Crossword-Puzzle/)
 
 
 ## **Algorithm**

@@ -17,32 +17,25 @@ tags:
 ex)  
 <table>
  <tr>
-  <th></th>
-  <th>type</th>
-  <th></th>
+  <th width="20px"></th>  <th width="20px">type</th>  <th width="20px"></th>
  </tr>
  <tr>
-  <th></th>
-  <th>0</th>
-  <th>1</th>
+  <th width="20px"></th>   <th width="20px">0</th>  <th width="20px">1</th>
  </tr>
  <tr>
-  <th>containers</th>
-  <th>1</th>
-  <th>1</th>
+  <th>containers</th>  <th>1</th>  <th>1</th>
  </tr>
  <tr>
-  <th></th>
-  <th>0</th>
-  <th>2</th>
+  <th></th>  <th>0</th>   <th>2</th>
  </tr>
 </table>
  
 type 0번의 총 갯수가 1, container 0의 총 갯수는 2  
 type 1번의 총 갯수가 3, container 1의 총 갯수는 2  
 
-container의 0에 type 0을 다 swap해서 넣는다고 할때, type 0은 1개만 있는데 container의 0은 2개가 있으므로, 절대 type 0만 담을 수 없다.
-
+container의 0에 type 0을 다 swap해서 넣는다고 할때,  
+type 0은 1개만 있어서 container 0에서 총 담아야 하는 갯수는 1개이다.  
+하지만, container 0은 총 2개를 담고 있으므로, 절대 type 0만 담을 수 없다.  
 
 ## **Algorithm**
 1. type 별 총 갯수를 구한다. (각 행의 합)

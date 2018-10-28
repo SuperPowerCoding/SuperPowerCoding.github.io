@@ -17,7 +17,7 @@ tags:
 
 [max subArray]  
 1. 동적 프로그래밍으로 풀이
-2. 아래의 표와 같이 최대 subArray의 sum은 ***sum의 최대값 - sum의 최소값(단, 최대값 이전 index)*** 이다.
+2. 아래의 표와 같이 최대 subArray의 sum은 **sum의 최대값 - sum의 최소값(단, 최대값 이전 index)** 이다.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}

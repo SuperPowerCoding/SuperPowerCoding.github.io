@@ -16,7 +16,7 @@ tags:
 1. node의 탐색 방법으로는 DFS를 이용.
 2. node를 탐색하면서 노드의 값을 더하면서 값을 계산함.
 
-*  Java의 경우 input을 하는 reference 코드의 퍼포먼스가 매우 안좋게 되어 있어서, 계속적으로 timeout error가 발생.
+*  이 문제 에서 Java의 경우 input reference 코드의 퍼포먼스가 매우 안좋게 되어 있어서, 풀이법이 맞아도 계속적으로 timeout error가 발생함.
 *  유사한 문제 : [Even Tree](https://superpowercoding.github.io/hackerrank/2018/09/12/Even-Tree/)
 
 ### 퍼포먼스를 좋게 하기 위한 방법
@@ -24,7 +24,13 @@ tags:
 2. 입력 시 아래 코드와 같이 scanner.nextInt(); 를 사용하는 방법이 훨씬 빠름.
 
 {% highlight js %}  
-String[] arrItems = scanner.nextLine().split(" ");  
+String[] arrItems = scanner.nextLine().split(" ");  // 쓰지 말것
+
+int[] input = new int[input_num];
+for(int i = 0 ; i < input_num ; i++)
+{
+    input[i] = scanner.nextInt();
+}
 {% endhighlight %}
 
 여러 단계를 거쳐서 오는 문제점도 있고,  

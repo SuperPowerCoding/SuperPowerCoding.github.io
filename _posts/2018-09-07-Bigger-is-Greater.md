@@ -20,9 +20,9 @@ tags:
 
 ### 다음수를 구하는 방법
 ex) dabbcca
-1. 바뀌어야 되는 지점을 찾는다. (내림차순 순의 처음지점): dab**b**cca
-2. 바로 큰수와 교환 : dab**b**c**c**a → da**c**c**b**a
-3. 바뀌어야 되는 지점이후 우측은 거꾸로 돌려준다.  : dabc**cba** → dabc**abc**
+1. 바뀌어야 되는 지점을 찾는다. (내림차순 순의 처음지점): dab<span style="color:red">b</span>cca
+2. 바로 큰수와 교환 : dab<span style="color:blue">b</span>c<span style="color:blue">c</span>a → da<span style="color:red">c</span>c<span style="color:red">b</span>a
+3. 바뀌어야 되는 지점이후 우측은 거꾸로 돌려준다.  : dabc<span style="color:blue">cba</span> → dabc<span style="color:red">abc</span>
 
 ## **Source Code**
 {% highlight js %}

@@ -20,6 +20,29 @@ ex)
 |            | 0    | 1 |   
 | containers | 1    | 1 |   
 |            | 0    | 2 |   
+<table>
+ <tr>
+  <th></th>
+  <th>type</th>
+  <th></th>
+ </tr>
+ <tr>
+  <th></th>
+  <th>0</th>
+  <th>1</th>
+ </tr>
+ <tr>
+  <th>containers</th>
+  <th>1</th>
+  <th>1</th>
+ </tr>
+ <tr>
+  <th></th>
+  <th>0</th>
+  <th>2</th>
+ </tr>
+</table>
+ 
 type 0번의 총 갯수가 1, container 0의 총 갯수는 2  
 type 1번의 총 갯수가 3, container 1의 총 갯수는 2  
 

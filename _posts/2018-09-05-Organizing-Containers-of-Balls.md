@@ -15,20 +15,9 @@ tags:
 각 타입의 총 수와 각 컨테이너가 갖고 있는 ball의 총 수가 일치 해야 함.
 
 ex)  
-<table>
- <tr>
-  <th width="20px"></th>  <th width="20px">type</th>  <th width="20px"></th>
- </tr>
- <tr>
-  <th width="20px"></th>   <th width="20px">0</th>  <th width="20px">1</th>
- </tr>
- <tr>
-  <th>containers</th>  <th>1</th>  <th>1</th>
- </tr>
- <tr>
-  <th></th>  <th>0</th>   <th>2</th>
- </tr>
-</table>
+![Alt text](https://s3.amazonaws.com/hr-challenge-images/0/1485814141-d283776840-swapping-balls-sample-0-2.png)
+
+
  
 type 0번의 총 갯수가 1, container 0의 총 갯수는 2  
 type 1번의 총 갯수가 3, container 1의 총 갯수는 2  

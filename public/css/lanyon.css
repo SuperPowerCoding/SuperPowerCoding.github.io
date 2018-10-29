@@ -583,7 +583,9 @@ a.pagination-item:hover {
   margin-top: 3px;
   padding: 0 10px;
   font-size: 12px;
-  color: #000;
+  /* color: #000; */
+  /* background-color: #bbb; */
+  color: #000; 
   background-color: #bbb;
   border-radius: 50%;
   transition: 0.5s ease-in-out;

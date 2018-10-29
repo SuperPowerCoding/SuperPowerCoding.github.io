@@ -4,7 +4,7 @@ title: Highest Value Palindrome
 categories: HackerRank
 tags: 
 - HackerRank
-- string
+- Strings
 ---
 
 ## **HackerRank link**

@@ -21,7 +21,7 @@ tags:
 3. 문자열의 길이가 1이 될때까지 각 문자열의 숫자를 합하여 super digit을 구한다. (재귀함수)
 
 ## **Source Code**
-{% highlight js %}
+```java
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -86,6 +86,5 @@ public class Solution {
         scanner.close();
     }
 }
-
-{% endhighlight %}
+```
 

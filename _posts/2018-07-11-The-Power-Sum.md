@@ -11,10 +11,22 @@ tags:
 [The Power Sum](https://www.hackerrank.com/challenges/the-power-sum/problem)
 
 ## **풀이 핵심**
+- 모든 수를 더해보면서 **X가 어떤 수들의 N제곱의 합**인지 확인한다.
 
+ex) X = 10, N = 2 </br>
+(X) X > 1^2  </br>
+(X) X > 1^2 + 2^2 </br>
+(X) X < 1^2 + 2^2 + 3^2 </br>
+(<span style="color:red">O</span>) X = 1^2 + 3^2 </br>
+... </br>
 
 ## **Algorithm**
-
+1. 처음 입력을 1로 하여 1^N 부터 시작한다.
+2. N승한 값을 구한다.
+3. 현재까지의 합을 구한다.
+4. 맞으면 count 후 리턴
+5. 크면 현재까지의 count 값 리턴
+6. 작으면 다음 수를 설정하여 과정 2부터 다시 구한다.
 
 ## **Source Code**
 ```java

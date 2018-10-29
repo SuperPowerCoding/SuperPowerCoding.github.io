@@ -31,7 +31,7 @@ tags:
 
 
 ## **Source Code**
-{% highlight js %}
+```java
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -248,4 +248,4 @@ public class Solution {
         scanner.close();
     }
 }
-{% endhighlight %}
+```

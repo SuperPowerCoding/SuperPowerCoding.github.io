@@ -26,7 +26,7 @@ tags:
 5. 마지막 상황 리턴
 
 ## **Source Code**
-{% highlight js %}
+```java
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -232,6 +232,4 @@ public class Solution {
         scanner.close();
     }
 }
-
-
-{% endhighlight %}
+```

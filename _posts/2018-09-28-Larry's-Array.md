@@ -41,7 +41,7 @@ ex) 가능한 경우와 가능하지 않는 경우를 보면
 
 
 ## **Source Code**
-{% highlight js %}
+```java
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -101,4 +101,4 @@ public class Solution {
         scanner.close();
     }
 }
-{% endhighlight %}
+```

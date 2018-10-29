@@ -19,7 +19,7 @@ tags:
 2. 변환된 숫자를 로마 숫자로 변환한다.
 
 ## **Source Code**
-{% highlight js %}
+```java
 import java.io.*;
 import java.util.*;
 import java.text.*;
@@ -122,5 +122,5 @@ public class Solution {
         
     }
 }
-{% endhighlight %}
+```
 

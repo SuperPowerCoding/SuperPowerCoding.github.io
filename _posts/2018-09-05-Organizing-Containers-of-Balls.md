@@ -33,7 +33,7 @@ type 0은 1개만 있어서 container 0에서 총 담아야 하는 갯수는 1�
 4. 타입의 총 수와 conatainer의 총수가 일치 하는지 확인.
 
 ## **Source Code**
-{% highlight js %}
+```java
 import java.io.*;
 import java.util.*;
 import java.text.*;
@@ -95,5 +95,5 @@ public class Solution {
         in.close();
     }
 }
-{% endhighlight %}
+```
 

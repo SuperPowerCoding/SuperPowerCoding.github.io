@@ -23,7 +23,7 @@ tags:
 1. 입력을 받을 때 총합을 미리 계산한다. => node 탐색 시 계산에 용이
 2. 입력 시 아래 코드와 같이 scanner.nextInt(); 를 사용하는 방법이 훨씬 빠름.
 
-{% highlight js %}  
+```java
 String[] arrItems = scanner.nextLine().split(" ");  // 쓰지 말것
 
 int[] input = new int[input_num];
@@ -31,7 +31,7 @@ for(int i = 0 ; i < input_num ; i++)
 {
     input[i] = scanner.nextInt();
 }
-{% endhighlight %}
+```
 
 여러 단계를 거쳐서 오는 문제점도 있고,  
 자바에서 String을 다룰때 String Class는 퍼포먼스가 매우 좋지 않으니 조심.
@@ -44,7 +44,7 @@ for(int i = 0 ; i < input_num ; i++)
 5. 최종 입력이 무조건 짝수 이므로, 마지막 node까지 가게 되면 결과 값을 하나 더 하게 됨. 이때문에 마지막에 -1을 해줌.
 
 ## **Source Code**
-{% highlight js %}
+```java
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -162,5 +162,5 @@ public class Solution {
         scanner.close();
     }
 }
-{% endhighlight %}
+```
 

@@ -21,7 +21,7 @@ tags:
 2. 입력으로 들어온 3x3행렬을 미리 입력 된 마방진을 통하여 cost의 최솟값을 구한다.
 
 ## **Source Code**
-{% highlight js %}
+```java
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -126,4 +126,4 @@ public class Solution {
         scanner.close();
     }
 }
-{% endhighlight %}
+```

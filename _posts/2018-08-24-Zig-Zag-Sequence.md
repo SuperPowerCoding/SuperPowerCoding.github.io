@@ -20,7 +20,7 @@ tags:
 
 
 ## **Source Code**
-{% highlight js %}
+```java
 import java.util.*;
 import java.lang.*;
 import java.io.*;
@@ -106,4 +106,4 @@ public class Main {
         return result;
     }
 }
-{% endhighlight %}
+```

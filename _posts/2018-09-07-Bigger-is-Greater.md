@@ -25,7 +25,7 @@ ex) dabbcca
 3. 바뀌어야 되는 지점이후 우측은 거꾸로 돌려준다.  : dabc<span style="color:blue">cba</span> → dabc<span style="color:red">abc</span>
 
 ## **Source Code**
-{% highlight js %}
+```java
 import java.io.*;
 import java.util.*;
 import java.text.*;
@@ -115,5 +115,5 @@ public class Solution {
         in.close();
     }
 }
-{% endhighlight %}
+```
 

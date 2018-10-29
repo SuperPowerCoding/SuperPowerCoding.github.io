@@ -72,7 +72,7 @@ tags:
 4. 과정 1~4를 반복한다.
 
 ## **Source Code**
-{% highlight js %}
+```java
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -179,6 +179,4 @@ public class Solution {
         scanner.close();
     }
 }
-
-{% endhighlight %}
-
+```

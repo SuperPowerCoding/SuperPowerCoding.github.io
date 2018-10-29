@@ -18,7 +18,7 @@ tags:
 2. 소수의 수가 짝수이면 Bob, 아니면 Alice를 리턴한다.
 
 ## **Source Code**
-{% highlight js %}
+```java
 import java.io.*;
 import java.math.*;
 import java.text.*;
@@ -76,5 +76,5 @@ public class Solution {
         bufferedWriter.close();
     }
 }
-{% endhighlight %}
+```
 

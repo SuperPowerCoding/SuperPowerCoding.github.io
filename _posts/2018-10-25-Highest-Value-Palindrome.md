@@ -25,7 +25,7 @@ tags:
 6. 길이가 홀수 인 경우, 가운데 index를 추가 변경이 가능한 경우 9로 변경해 준다.
 
 ## **Source Code**
-{% highlight js %}
+```java
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -157,5 +157,4 @@ public class Solution {
         scanner.close();
     }
 }
-
-{% endhighlight %}
+```

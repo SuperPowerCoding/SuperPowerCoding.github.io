@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Maximum Palindromes
-categories: HackerRank
+categories: HackerRank(not soloved yet)
 tags: 
 - HackerRank
 - Strings
@@ -9,7 +9,7 @@ tags:
 ---
 
 ## **HackerRank link**
-[Maximum Palindromes](https://www.hackerrank.com/challenges/maximum-palindromes/problem)
+* [Maximum Palindromes](https://www.hackerrank.com/challenges/maximum-palindromes/problem)
 
 
 ## **풀이 핵심**

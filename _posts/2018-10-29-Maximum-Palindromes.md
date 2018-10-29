@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Maximum Palindromes
-categories: HackerRank(not soloved yet)
+categories: HackerRank(solving)
 tags: 
 - HackerRank
 - Strings
-- not soloved yet
+- solving
 ---
 
 ## **HackerRank link**
@@ -21,6 +21,6 @@ tags:
 ## **Source Code**
 ```java
 
-not soloved yet.
+solving
 
 ```

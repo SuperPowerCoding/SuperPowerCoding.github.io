@@ -9,6 +9,7 @@ tags:
 ---
 
 ## **HackerRank link**
+<hr>
 * [Maximum Palindromes](https://www.hackerrank.com/challenges/maximum-palindromes/problem)
 
 

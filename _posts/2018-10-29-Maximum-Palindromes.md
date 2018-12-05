@@ -1,11 +1,10 @@
 ---
 layout: post
 title: Maximum Palindromes
-categories: HackerRank(solving)
+categories: HackerRank
 tags: 
 - HackerRank
 - Strings
-- solving
 ---
 
 ## **HackerRank link**

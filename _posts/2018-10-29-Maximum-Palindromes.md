@@ -55,8 +55,8 @@ ex) (4! % p) / (3! % p) = (4! % p) x ((3!)^(p-2) % p)
 ```java 
 //변경 전
 String[] lr = scanner.nextLine().split(" ");
-int l = lr[0];
-int r = lr[1];
+int l = Integer.Parse(lr[0]);
+int r = Integer.Parse(lr[1]);
 
 // 변경 후
 int l = scanner.nextInt();

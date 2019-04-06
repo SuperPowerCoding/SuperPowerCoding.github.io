@@ -16,7 +16,11 @@ Kruskal 알고리즘에 대해 잘 이해하고 있다.
 해당 문제는 그래프에서 subtree 중 최소 가중치를 원하고 있다.  
 Kruskal 알고리즘을 잘 알고 있는 경우 쉽게 풀린다.
 
-Kruskal 알고리즘은 MST(Minimal Spanning Tree : 최소 신장 트리) 알고리즘의 일종 으로 대표적으로 Kruskal MST와 Prim MST가 있다.
+※ MST(Minimal Spanning Tree : 최소 신장 트리) 알고리즘은 대표적으로 Kruskal MST와 Prim's MST가 있다.
+
+둘다 Greedy 알고리즘의 일종이지만,   
+Prim's 알고리즘은 트리를 greedy하게 만들고(계속 이어 붙임),  
+Kruskal은 엣지를 greedy하게 Tree를 만든다(만들다가 이어 붙임).
 
 
 ## **Algorithm**
@@ -27,6 +31,10 @@ Kruskal 알고리즘은 MST(Minimal Spanning Tree : 최소 신장 트리) 알고
    4-1. 최상위 부모 노드를 파악한다. (find)  
    4-2. 최상위 부모 노드가 같다면, 연결이 되므로 패스  
    4-3. 같지 않다면 연결한다. (union)
+
+아래 코드는 해당 문제를 kruskal과 prim's 모두 이용해 풀었는데..  
+항상 주의 할 것이 입력 조건에서 간선의 weight 조건이.. 0이 포함되어 있는지 꼭 확인 할것...  
+prim's 알고리즘 구현하면서 처음에 ArrayList가아닌 배열로 구현하면서 무게 조건이 0인경우 패스라고 했다가 큰 낭패를 봤었음.....
 
 ## **Source Code**
 ```java
@@ -61,6 +69,81 @@ class Result {
         }
     }
 
+    public static int prim(int gNodes, List<Integer> gFrom, List<Integer> gTo, List<Integer> gWeight) {
+        int minWeight = 0;
+    
+        // map 만들기
+        ArrayList<Node> map[] = new ArrayList[gNodes+1];
+        
+        for(int i = 0 ; i < map.length; i++)
+        {
+            map[i] = new ArrayList<>();
+        }
+        
+        Iterator[] it = new Iterator[3];
+        it[0] = gFrom.iterator();
+        it[1] = gTo.iterator();
+        it[2] = gWeight.iterator();
+        
+        while(it[0].hasNext())
+        {
+            int start = (int)it[0].next();
+            int end = (int)it[1].next();
+            int weight = (int)it[2].next();
+            
+            map[start].add(new Node(start,end,weight));
+            map[end].add(new Node(end,start,weight));
+        }
+        
+        PriorityQueue<Node> minWeigtQue = new PriorityQueue<>();
+        Queue<Integer> haveToSearch = new LinkedList<>(); 
+        boolean[] isMoved = new boolean[gNodes+1];
+        
+        haveToSearch.add(1);
+                    
+        while(haveToSearch.isEmpty() == false)
+        {
+            // 서치 큐에서 현재 서치를 해야 하는 시작점을 받아 온다.
+            int start = haveToSearch.poll();
+            ArrayList tempList = map[start];
+            
+            // 이동한 곳은 이동했다는 표시를 한다.
+            isMoved[start] = true;
+            
+            // 이미 이동했던 곳을 제외하고 현재 노드에서의 이동 가능한 모든 경로를 찾는다.
+            for(int i = 0 ; i < tempList.size() ; i++)
+            {                
+                Node tempNode = (Node)tempList.get(i);
+                
+                // 이동안한곳이라면..
+                if(isMoved[tempNode.end] == false)
+                {
+                    // if(debugPrint) System.out.print("("+i+")");
+                    // 만약 있다면, 우선순위 큐에 넣는다.
+                    minWeigtQue.add(tempNode);
+                }            
+            }
+            
+            // 모두 다 넣었으면, 이중 가장 최단길을 우선순위 큐에서 뽑아 낸다.                
+            while(minWeigtQue.isEmpty() == false)
+            {
+                Node temp = minWeigtQue.poll();
+                int next = temp.end;
+                
+                // 중복을 방지하기 위해서, 이미 이동한 값은 무시한다.
+                if(isMoved[next] == true) continue;
+                
+                minWeight += temp.weight;
+                // if(debugPrint) System.out.println("->"+temp.end+"("+temp.weight+")");
+                if(debugPrint) System.out.println(temp.weight);
+                
+                haveToSearch.add(next);
+                break;
+            }
+        }
+
+        return minWeight;
+    }
     /*
      * Complete the 'kruskals' function below.
      *
@@ -169,7 +252,7 @@ class Result {
             
             if(debugPrint) System.out.println(":"+node.weight);
             
-            // 부모가 서로 다른경우에는 서로 합친다. 부모를 같이 한다. ex) 3 -> 4로 이동하는 경우 3과 4 모두 최상위 노드가 같아야 한다.
+            // 부모가 서로 다른경우에는 서로 합친다. ( 부모를 같이 한다. ex) 3 -> 4로 이동하는 경우 3과 4 모두 최상위 노드가 
             minWeight += node.weight;
             union(parents, start, end);
         }        
@@ -202,7 +285,8 @@ public class Solution {
             gWeight.add(Integer.parseInt(gFromToWeight[2]));
         }
 
-        int res = Result.kruskals(gNodes, gFrom, gTo, gWeight);
+        //int res = Result.kruskals(gNodes, gFrom, gTo, gWeight);
+        int res = Result.prim(gNodes, gFrom, gTo, gWeight);        
 
         // Write your code here.
         bufferedWriter.write(String.valueOf(res));

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Prims (MST) : Special Subtree
+title: Prim's (MST) Special Subtree
 categories: HackerRank
 tags: 
 - HackerRank

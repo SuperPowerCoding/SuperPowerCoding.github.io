@@ -5,6 +5,8 @@ categories: HackerRank
 tags: 
 - HackerRank
 - Prim's MST
+- Kruskal MST
+- Mininal Spanning Tree
 ---
 
 ## **HackerRank link**

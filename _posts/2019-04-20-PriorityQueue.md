@@ -19,7 +19,19 @@ tags:
 
 이 때문에, Heap을 이용하여 구현한다.  
 
-Heap 구조를 이용하기 때문에 시간 복잡성은 O(logn) 이다.
+Heap 구조를 이용하기 때문에 시간 복잡성은 O(logn) 이다.  
+
+Heap 구조의 갯수는 2^(h-1) <= n <= 2^h - 1 이다.
+
+h-1 <= log2 n <= h  
+-1 <= log2 n -h <= 0  
+-log2 n -1 <=  -h <= -log2 n   
+log2 n + 1 >=  h >= log2 n  
+log2 n <= h <= log2 n + 1 < log2 (n+1) + 1
+
+h = log2(n+1) = O(log2n)
+
+추가나 삭제 시 O(logn)시간 복잡도  
 
 [추상자료형]  
   
